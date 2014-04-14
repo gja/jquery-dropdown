@@ -69,7 +69,7 @@ if(jQuery) (function($) {
 	};
 	
 	$(function () {
-		$('BODY').on('click.dropdown', '[data-dropdown]', showMenu);
+		$('BODY').on('mouseenter.dropdown', '[data-dropdown]', showMenu);
 		$('HTML').on('click.dropdown', hideDropdowns);
 		// Hide on resize (IE7/8 trigger this when any element is resized...)
 		if( !$.browser.msie || ($.browser.msie && $.browser.version >= 9) ) {
